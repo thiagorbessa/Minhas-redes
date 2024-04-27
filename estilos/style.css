@@ -1,0 +1,57 @@
+@charset "UTF-08";
+*{
+    margin: 0px;
+    padding: 0px;/*zerar configuracoes*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    height: 100vh;/*altura e largura para ocupar toda a pagina*/
+    width: 100vw;
+    background-color: black;
+}
+main{
+    position: relative;/*posicao relativa para organizar*/
+    height: 100vh;
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover;/*fazer a imagem ocupar a tela toda */
+    background-attachment: fixed;/*fazer a imagem rolar junto com a tela*/
+    
+}
+section#telefone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);/*colocar o telefone no meio da tela*/
+    height: 627px;/*a altura e largura da para ver no gimp em propriedades*/
+    width: 311px;
+    /*coloca um fundo de cor e uma imagem de fundo*/
+    background: url(../imagens/frame-iphone.png) no-repeat;
+}
+iframe#tela{/*configurar o tamanho da tela do telefone*/
+    position: relative;/*position relative habilita voce vvconfigurar a posicao que o item vai ficar*/
+    top: 80px;
+    left: 22px;/*como a tela é somente a parte preta da imagem colocamos por tentativa e erro o tamanho com distancia de 80px da parte de cima e 22px da esquerda ate a imagem encaixar na parte da tela em cima e na esquerda*/
+    /*agora configura o tamanho da iamgem em largura e altura*/
+    width: 267px;
+    height: 471px;
+    /*agora configura para a imagem ficar completa na tela o background-size: cover; tem que ser no body do iframe*/
+    
+}
+section#redes-sociais{
+    text-align: right;/*colocar tudo do lado direito alinhado, para colcoar um em cima do outro, pula uma linha após cada imagem com uma tag <BR>*/
+}
+section#redes-sociais img{/*diminuiur as imagens para ficarem com tamanhos iguais e redondas*/
+    width: 50px;/*diminuiu as imagens para um tamanho igual*/
+    margin: 10px;/*separa um pouco as imagens*/
+    border-radius: 50%;/*faz as bordas arredondarem*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.541);
+       
+}
+section#redes-sociais img:hover{
+    /*configurar acao ao passar o mouse na imagem*/
+    border: 2px solid white;/*cria uma borda branca*/
+    border-radius: 20%;/*tira o arredondado e coloca uma leve borda*/
+    transform: translate(-3px, 3px);/*chega um pouco para o lado esquerdo e para cima*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.596);/*aumenta a sombra*/
+    transition: transform .3s;/*escolhe o tempo para acontecer a transicao no caso vamos escolher so o transform para demorar um pouco*/
+}

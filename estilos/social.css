@@ -1,0 +1,53 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-scrollbar{/*configuracao da barra de rolagem para esconder ela*/
+    width: 0px;
+    height: 0px;
+}
+img{
+    width: 100vw;
+
+}
+a{/*configurar a fonte de dentro do link*/
+    display: block;
+    background-color: darkred;
+    color: white;
+    padding: 20px;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+}
+a.youtube:hover{
+    background-color: red;
+    border: 2px solid white;/*cria uma borda branca*/
+    border-radius: 2%;/*tira o arredondado e coloca uma leve borda*/
+}
+a.github:hover{
+    background-color: green;
+    border: 2px solid white;/*cria uma borda branca*/
+    border-radius: 2%;/*tira o arredondado e coloca uma leve borda*/
+}
+a.facebook:hover{
+    background-color: darkblue;
+    border: 2px solid white;/*cria uma borda branca*/
+    border-radius: 2%;/*tira o arredondado e coloca uma leve borda*/
+}
+a.instagram:hover{
+    background: linear-gradient(#e66465, #9198e5);
+    border: 2px solid white;/*cria uma borda branca*/
+    border-radius: 2%;/*tira o arredondado e coloca uma leve borda*/
+}
+a.twitter:hover{
+    background: linear-gradient(white, rgb(0, 0, 252));
+    border: 2px solid white;/*cria uma borda branca*/
+    border-radius: 2%;/*tira o arredondado e coloca uma leve borda*/
+}
+a.linkedin:hover{
+    background:  darkblue;
+    border: 2px solid white;/*cria uma borda branca*/
+    border-radius: 2%;/*tira o arredondado e coloca uma leve borda*/
+}
